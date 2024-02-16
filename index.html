@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Re-animation of the See'N Say Story Maker">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <title>See'N Say Story Maker | Assignment_1</title>
 </head>
 <body>
@@ -20,7 +28,7 @@
                         <div>
                             <img src="img/sentence-2/dog.jpg" alt="dog">
                             <figure>
-                                <figcaption>Dogs</figcaption>
+                                <figcaption>Dog</figcaption>
                             </figure>
                         </div>
                         <div>
@@ -32,7 +40,7 @@
                         <div>
                             <img src="img/sentence-4/snow.jpg" alt="snow">
                             <figure>
-                                <figcaption>The Snow</figcaption>
+                                <figcaption>Snow</figcaption>
                             </figure>
                         </div>
                         <div>
@@ -128,7 +136,7 @@
                         <div>
                             <img src="img/sentence-4/quiet.jpg" alt="quiet town">
                             <figure>
-                                <figcaption>on the quiet</figcaption>
+                                <figcaption>on the quiet town</figcaption>
                             </figure>
                         </div>
                         <div>
@@ -142,7 +150,7 @@
                         <div>
                             <img src="img/sentence-1/mountains.jpg" alt="mountain">
                             <figure>
-                                <figcaption>the distant mountains</figcaption>
+                                <figcaption>distant mountains</figcaption>
                             </figure>
                         </div>
                         <div>
@@ -173,12 +181,81 @@
                 </div>
             </section>
             <section>
-                <div>
-                    <button></button>
+                <div class="sentenceButtons">
+                    <div class="buttons button-1">
+                        <button id="button-1"></button>
+                    </div>
+                    <div class="buttons button-2">
+                        <button id="button-2"></button>
+                    </div>
+                    <div class="buttons button-3">
+                        <button id="button-3"></button>
+                    </div>
+                    <div class="buttons button-4">
+                        <button id="button-4"></button>
+                    </div>
+                    <div class="buttons button-5">
+                        <button id="button-5"></button>
+                    </div>
                 </div>
-                <div>
-                    <button></button>
-                </div>
+                <section class="outputText">
+                    <div>
+                        <span id="firstWord"></span>
+                    </div>
+                    <div>
+                        <span id="finalSentence"></span>
+                    </div>
+                    <div>
+                        <span id="randomSentence"></span>
+                    </div>
+                    <div class="audio">
+                        <div>
+                            <audio id="audioNoun1" src="audio/sentence1/sun.mp3"></audio>
+                            <audio id="audioNoun2" src="audio/sentence2/dog.mp3"></audio>
+                            <audio id="audioNoun3" src="audio/sentence3/thunder.mp3"></audio>
+                            <audio id="audioNoun4" src="audio/sentence4/snow.mp3"></audio>
+                            <audio id="audioNoun5" src="audio/sentence5/the_rainbow.mp3"></audio>
+                        </div>
+                        <div>
+                            <audio id="audioVerb1" src="audio/sentence1/sets.mp3"></audio>
+                            <audio id="audioVerb2" src="audio/sentence2/bark.mp3"></audio>
+                            <audio id="audioVerb3" src="audio/sentence3/rumbles.mp3"></audio>
+                            <audio id="audioVerb4" src="audio/sentence4/falls.mp3"></audio>
+                            <audio id="audioVerb5" src="audio/sentence5/arcs.mp3"></audio>
+                        </div>
+                        <div>
+                            <audio id="audioAdj1" src="audio/sentence1/peacefully.mp3"></audio>
+                            <audio id="audioAdj2" src="audio/sentence2/loudly.mp3"></audio>
+                            <audio id="audioAdj3" src="audio/sentence3/ominously.mp3"></audio>
+                            <audio id="audioAdj4" src="audio/sentence4/slowly.mp3"></audio>
+                            <audio id="audioAdj5" src="audio/sentence5/gracefully.mp3"></audio>
+                        </div>
+                        <div>
+                            <audio id="audioNoun2_1" src="audio/sentence1/behind.mp3"></audio>
+                            <audio id="audioNoun2_2" src="audio/sentence2/in_the_quiet.mp3"></audio>
+                            <audio id="audioNoun2_3" src="audio/sentence3/in_the_dark.mp3"></audio>
+                            <audio id="audioNoun2_4" src="audio/sentence4/on_the_quiet_town.mp3"></audio>
+                            <audio id="audioNoun2_5" src="audio/sentence5/after_rain_shower.mp3"></audio>
+                        </div>
+                        <div>
+                            <audio id="audioNoun3_1" src="audio/sentence1/distant_mountains.mp3"></audio>
+                            <audio id="audioNoun3_2" src="audio/sentence2/neighborhood.mp3"></audio>
+                            <audio id="audioNoun3_3" src="audio/sentence3/stormy_sky.mp3"></audio>
+                            <audio id="audioNoun3_4" src="audio/sentence4/in_winter.mp3"></audio>
+                            <audio id="audioNoun3_5" src="audio/sentence5/school.mp3"></audio>
+                        </div>
+                    </div>
+                </section>
+                <section class="other-buttons">
+                    <div class="buttons button-6">
+                        <button id="finalButton"></button>
+                        <em>Full Sentence</em>
+                    </div>
+                    <div class="buttons button-7">
+                        <button id="randomButton"></button>
+                        <span>Random Story</span>
+                    </div>
+                </section>
             </section>
         </section>
     </main>
